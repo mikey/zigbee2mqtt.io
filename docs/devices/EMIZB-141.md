@@ -32,7 +32,7 @@ pageClass: device-page
 ## Options
 *[How to use device type specific configuration](../guide/configuration/devices-groups.md#specific-device-options)*
 
-* `power_calibration`: Calibrates the power value (percentual offset), takes into effect on next report of device. The value must be a number.
+* `power_calibration`: Calibrates the power value (percentual offset), takes into effect on next report of device. The value must be a number. The device assumes 1000imp/kWh. eg if your power meter does 800imp/kWh, put `25` here (ie 100 * (1 - 1000/800)).
 
 * `power_precision`: Number of digits after decimal point for power, takes into effect on next report of device. This option can only decrease the precision, not increase it. The value must be a number with a minimum value of `0` and with a with a maximum value of `3`
 
